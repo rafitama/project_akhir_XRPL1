@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Profil Saya | R SPORTS</title>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen pb-10">
+
+  <nav class="p-6 flex items-center justify-between border-b border-slate-800">
+    <h1 class="text-xl font-black">R <span class="text-cyan-400">SPORTS</span></h1>
+    <a href="HomePage.html" class="text-[11px] font-bold uppercase tracking-wider text-slate-400 border border-slate-800 px-4 py-1.5 rounded-full bg-slate-900 hover:text-cyan-400 hover:border-cyan-500/40 transition-all duration-300">Kembali</a>
+  </nav>
+
+  <main class="max-w-2xl mx-auto p-6 mt-10 space-y-6">
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center shadow-xl">
+      <div class="w-24 h-24 mx-auto mb-4 border-4 border-slate-700 rounded-full overflow-hidden">
+        <img src="https://th.bing.com/th/id/OIP.XN5rHKiEgWZD2PyRd7TDKwHaHa?w=172&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Profile Picture" class="w-full h-full object-cover">
+      </div>
+      <h2 class="text-xl font-black uppercase">User R Sports</h2>
+      <p class="text-slate-500 text-sm mb-6">user@rsports.com</p>
+      <div class="flex gap-3">
+        <button id="logout-btn" class="flex-1 py-4 rounded-xl border border-red-500/20 text-red-400 hover:bg-red-500/10 font-bold text-sm transition">Logout</button>
+      </div>
+    </div>
+
+    <div class="bg-slate-900/50 border border-slate-800 rounded-3xl p-6">
+      <h3 class="font-black text-slate-200 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Pesanan Terakhir</h3>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between bg-slate-950 p-4 rounded-xl border border-slate-800">
+          <div>
+            <p class="text-xs font-bold text-white">Adidas Top Sala Competition</p>
+            <p class="text-[10px] text-slate-500">22 Mei 2026 • Selesai</p>
+          </div>
+          <span class="text-[10px] font-black text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">SUKSES</span>
+        </div>
+        <div class="flex items-center justify-between bg-slate-950 p-4 rounded-xl border border-slate-800">
+          <div>
+            <p class="text-xs font-bold text-white">Nike Tiempo Legend 9</p>
+            <p class="text-[10px] text-slate-500">10 Mei 2026 • Selesai</p>
+          </div>
+          <span class="text-[10px] font-black text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">SUKSES</span>
+        </div>
+      </div>
+    </div>
+  </main> <div id="logout-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"></div>
+    <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-2xl w-full max-w-sm relative text-center">
+      <div class="text-4xl mb-4">⚠️</div>
+      <h3 class="text-lg font-black text-white uppercase tracking-wider mb-2">Yakin ingin Logout?</h3>
+      <p class="text-xs text-slate-400 mb-6">Kamu akan keluar dari akun dan perlu login kembali nanti.</p>
+      <div class="flex gap-3">
+        <button onclick="closeLogoutModal()" class="flex-1 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 font-bold text-sm transition">Tidak</button>
+        <button onclick="confirmLogout()" class="flex-1 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm transition">Ya, Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/Profil.js"></script>
+</body>
+</html>
